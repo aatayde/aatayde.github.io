@@ -1,8 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    text-align: center;
+    /* text-align: center; */
     background-color: teal;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     line-height: 1.6em;
+    /* border line color & radius */
+    border: 4px black solid;
+    border-radius: 10px;
+    /* 
+    background-image: url(URL GOES HERE)
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* background */
 
+}
+
+/* .container {
+    max-width: 220px;
+    margin: auto;
+    background-color: yellow;
+} */
+
+.box {
+    background:#f4f4f4;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 15;
+}
+
+.box p {
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+}
+
+#box-2 {
+    float: left;
+    width: 68%;
+
+}
+
+#box-3 {
+    float: right;
+    width: 30%;
 }
