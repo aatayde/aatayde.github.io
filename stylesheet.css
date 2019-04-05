@@ -3,7 +3,8 @@
 }
 
 body {
-    /* text-align: center; */
+    height: 4000px;
+    text-align: center;
     background-color: teal;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
@@ -26,26 +27,78 @@ body {
     background-color: yellow;
 } */
 
-.box {
-    background:#f4f4f4;
-    border: 1px solid #333;
-    padding: 20px;
-    margin-bottom: 15;
+
+/* Navbar Styling */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #4c6ca0;
+    border-radius: 5px;
+    overflow: auto;
+    position: sticky;
+    top: 0;
 }
 
-.box p {
-    text-align: left;
-    text-align: center;
-    text-align: justify;
-}
-
-#box-2 {
+.navbar li {
     float: left;
-    width: 68%;
+}
+
+.navbar li a {
+    color: #fff; 
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.navbar li a:hover {
+    background-color: #446190;
+    color: #f4f4f4;
+}
+
+/* button style */
+.btn {
+    background: #44cc66;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #f4f4f4;
+    background: #4c6ca0;
+}
+
+/* Side Menu */
+.side-menu {
+    list-style: none;
+    border: 1px #ddd solid;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
 
 }
 
-#box-3 {
-    float: right;
-    width: 30%;
+.side-menu li {
+    font-size: 18px;
+    line-height: 2.4em;
+    border-bottom: dotted 1px #ddd;
 }
+
+.side-menu li:last-child {
+    border: none;
+}
+
+.side-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.side-menu li a:hover {
+    color: coral;
+}
+
+/*  */
