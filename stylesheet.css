@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 700px;
+    height: max-content;
     text-align: center;
     background-color: teal;
     font-family: 'Ubuntu', sans-serif;
