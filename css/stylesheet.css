@@ -1,3 +1,7 @@
+/* Listing changes I want to make within CSS */
+/* 1. Replace floats with flex */
+/*  */
+
 /* Reset */
 * {
     margin: 0;
@@ -18,19 +22,24 @@ a {
 }
 
 h1, h2, h3 {
-padding-bottom: 20px;
+/* padding-bottom: 20px; */
 }
 
 p {
     margin: 10px 0;
 }
 
+
 /* Utility */
 #container {
 margin: auto;
-max-width: 1100px;
-overflow: auto;
+/* max-width: 1100px; */
+/* overflow: auto; */
 padding: 0 20px;
+display: flex;  
+/* justify-content: center; */
+/* flex-wrap: wrap; */
+/* width: 100%; */
 }
 
 .text-primary {
@@ -41,6 +50,35 @@ color: #239b9b;
     font-size: 20px;
 }
 
+.btn:hover {
+    background: #f4f4f4;
+    color: 333;
+}
+
+/* btn-light breaks the site */
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #333;
+    color: #239b9b
+}
+
+.clr {
+    clear: both;
+}
 
 /* Navbar */
 #navbar {
@@ -55,23 +93,26 @@ color: #239b9b;
     color: #fff;
 }
 
-#navbar .logo {
-    float: left;
-    padding-top: 20px;
+#navbar .nav-flex {
+    display: flex;
+    justify-content: flex-start;
 }
 
 #navbar ul {
     list-style: none;
-    float: right;
+    /* padding: 20px 20px; */
+    display: flex;
+    justify-content: center;
 }
 
 #navbar ul li {
-    float: left;
+    /* float: left; */
 }
 
 #navbar ul li a {
-    display: block;
+    /* display: block; */
     padding: 20px;
+    text-align: center;
 }
 
 #navbar ul li a:hover,
@@ -80,9 +121,13 @@ color: #239b9b;
     color: #fff;
 }
 
+#navbar .container {
+    display: flex;
+    justify-content: space-evenly;
+}
 /* Showcase  */
 #showcase {
-    background: url('../img/IMG_3708.jpg') no-repeat
+    background: url('../img/IMG_0963.jpg') no-repeat
     center center/cover;
     height: 600px;
 }
@@ -97,6 +142,43 @@ color: #239b9b;
     font-size: 60px;
     line-height: 1.2em;
 
+}
+
+/* Home Info */
+#home-info {
+    height: 400px;
+}
+
+#home-video .iphone {
+    float: left;
+    width: 50%;
+    background: #333;
+    min-height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-video .gopro {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background: #333;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+/* Features */
+.box {
+    /* float: left; */
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
 }
 
 /* Footer */
