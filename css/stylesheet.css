@@ -127,8 +127,9 @@ color: #239b9b;
 }
 /* Showcase  */
 #showcase {
-    background: url('../img/IMG_0963.jpg') no-repeat
-    center center/cover;
+    /* background: url('../img/IMG_0963.jpg') no-repeat
+    center center/cover; */
+    background: #444;
     height: 600px;
 }
 
