@@ -82,11 +82,14 @@ color: #239b9b;
 
 /* Navbar */
 #navbar {
+    display: flex;
     background: #333;
     color: #fff;
     overflow: auto;
     position: sticky;
     top: 0;
+    z-index: 1;
+    /* align-items: center; */
 }
 
 #navbar a {
@@ -103,6 +106,7 @@ color: #239b9b;
     /* padding: 20px 20px; */
     display: flex;
     justify-content: center;
+
 }
 
 #navbar ul li {
@@ -111,14 +115,14 @@ color: #239b9b;
 
 #navbar ul li a {
     /* display: block; */
-    padding: 20px;
+    padding: 0.75rem;
     text-align: center;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-    background: #239b9b;
-    color: #fff;
+    /* background: #239b9b; */
+    color: #239b9b;
 }
 
 #navbar .container {
@@ -178,11 +182,15 @@ color: #239b9b;
     text-align: center;
 }
 
-.box i {
+.box ul {
+    list-style: none;
+}
+
+.box ul i {
     margin-bottom: 10px;
 }
 
-.box li a:hover {
+.box ul li a:hover {
     text-decoration: underline;
 }
 
