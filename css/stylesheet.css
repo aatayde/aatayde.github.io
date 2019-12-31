@@ -16,6 +16,27 @@ html {
     line-height: 1.7em;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+header:before {
+    content: '';
+    background: url('https://source.unsplash.com/1600x900/?nature,water')
+    no-repeat center center/cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
 a {
     color: #333;
     text-decoration: none;
@@ -56,20 +77,20 @@ color: #239b9b;
 }
 
 /* btn-light breaks the site */
-.btn-light {
+/* .btn-light {
     background: #f4f4f4;
     color: #333;
-}
+} */
 
-.bg-dark {
+/* .bg-dark {
     background: #333;
     color: #fff;
-}
+} */
 
-.bg-light {
+/* .bg-light {
     background: #f4f4f4;
     color: #333;
-}
+} */
 
 .bg-primary {
     background: #333;
@@ -92,7 +113,7 @@ color: #239b9b;
     /* align-items: center; */
 }
 
-#navbar a {
+.container a {
     color: #fff;
 }
 
@@ -125,16 +146,20 @@ color: #239b9b;
     color: #239b9b;
 }
 
-#navbar .container {
+ .container {
     display: flex;
     justify-content: space-evenly;
+}
+
+.container li {
+    list-style: none;
 }
 
 /* Showcase  */
 #showcase {
     /* background: url('../img/IMG_0963.jpg') no-repeat
     center center/cover; */
-    background: #444;
+    /* background: #444; */
     height: 600px;
 }
 
@@ -195,6 +220,19 @@ color: #239b9b;
     text-decoration: underline;
 }
 
+/* Light & Dark theme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #444;
+        color: #e4e4e4;
+    }
+    a {
+        color: #e39777;
+    }
+    img {
+        filter: grayscale(30%);
+    }
+}
 
 /* Footer */
 #main-footer {
