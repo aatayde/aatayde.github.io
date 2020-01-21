@@ -1,6 +1,6 @@
 /* Listing changes I want to make within CSS */
 /* 1. Replace floats with flex */
-/*  */
+/* 2. Add hover style with color to a icons */
 
 /* Reset */
 * {
@@ -40,6 +40,19 @@ header:before {
 a {
     color: #333;
     text-decoration: none;
+}
+
+/* Hover Style for links  */
+.spotify-link:hover {
+    color: #1ed761;
+}
+
+.twitter-link:hover {
+    color: #38A1F3;
+}
+
+.youtube-link:hover {
+    color: #c4302b;
 }
 
 h1, h2, h3 {
