@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important; }
+  .container {
+    background-color: #121212;
+    color: #ccc; }
+  .fas,
+  .fab {
+    color: #faf9f9 !important; }
+  .projects:target,
+  .bio:target {
+    background-color: rgba(0, 0, 0, 0.3) !important; }
+  .project__title {
+    color: #faf9f9 !important; } }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  transition: 0.2s; }
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: #444;
+  background-image: url("../img/MIO-ITO.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 1fr; }
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5rem 0; }
+  .info__img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%; }
+  .info__content .name {
+    font-size: 3.5rem; }
+  .info__content .title {
+    font-size: 2.5rem; }
+  .info__content .sections {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0; }
+    .info__content .sections .fas,
+    .info__content .sections .fab {
+      font-size: 2.8rem;
+      color: #444; }
+
+.bio {
+  justify-self: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1; }
+  .bio p {
+    font-size: 2rem;
+    margin: 2rem 3rem; }
+  .bio:target {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  border-radius: 2rem; }
+  .projects:target {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3; }
+  .projects .project {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .projects .project a {
+      display: grid;
+      justify-self: center;
+      gap: 1rem;
+      text-decoration: none; }
+    .projects .project .fas,
+    .projects .project .fab {
+      font-size: 5rem;
+      color: #222;
+      justify-self: center; }
+    .projects .project__title {
+      font-size: 3rem;
+      color: #222; }
+
+.overlay {
+  width: 90%;
+  justify-self: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem; }

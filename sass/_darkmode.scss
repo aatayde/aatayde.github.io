@@ -1,0 +1,25 @@
+// Dark Theme
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url('../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg') !important;
+  }
+
+  .container {
+    background-color: $color-dark-1;
+    color: $color-grey-light-4;
+  }
+
+  .fas,
+  .fab {
+    color: $color-grey-light-1 !important;
+  }
+
+  .projects:target,
+  .bio:target {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .project__title {
+    color: $color-grey-light-1 !important;
+  }
+}
