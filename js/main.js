@@ -1,1 +1,0 @@
-window.alert("Site is under maintanice -Alejandro");
