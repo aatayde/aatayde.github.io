@@ -9,6 +9,10 @@ body {
   margin: 0;
   padding: 0; }
 
+  li::marker {
+    content: '';
+  }
+
 body {
   color: #444;
   background-image: url("../public/img/MIO-ITO.webp");
@@ -29,14 +33,14 @@ body {
 }
 
 .section-icons:hover {
-  color: #45566b;
+  color: #35a79a;
 }
 
 .info__content {
   text-shadow: #e5a37d 0 0 10px;
   transition: all 0.2s; 
   color: #121212;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
   
 .info__img {
@@ -46,10 +50,11 @@ body {
   clip-path: polygon(100% 0, 50% 100%, 0 0%);
 }
 
-.nav { 
-  padding: 1.5rem 0;
-  background-color: #e5a37d;
+.navbar { 
+  padding: 2rem 0rem;
+  background-color: #232323;
 }
+
 .nav-item {
   text-align: center;
 
@@ -62,17 +67,25 @@ body {
     color: #e3e3e3;
     transition: all 0.2s; }
 
-  .container {
+  a { color: #f0eeee; }
+  a:hover { color: #35a79a; }
+
+  .nav {
+    background-color: #232323;
+  }
+  .container-fluid {
     background-color: #121212;
     color: #ccc;
-    transition: all 0.2s; }
+    transition: all 0.2s; 
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .info__content {
     color: #f0eeee;
     text-shadow: #45566b 0 0 10px;
     transition: all 0.2s; } 
 
-  a { color: #f0eeee; }
   
   .col {
     background-color: #333;
