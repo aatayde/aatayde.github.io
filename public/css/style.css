@@ -36,7 +36,7 @@ body {
   text-shadow: #e5a37d 0 0 10px;
   transition: all 0.2s; 
   color: #121212;
-  padding-bottom: 15%;
+  padding-bottom: 2rem;
 }
   
 .info__img {
@@ -46,9 +46,13 @@ body {
   clip-path: polygon(100% 0, 50% 100%, 0 0%);
 }
 
-.nav { padding: 10% 0;}
+.nav { 
+  padding: 1.5rem 0;
+  background-color: #e5a37d;
+}
 .nav-item {
   text-align: center;
+
 }
 
 
