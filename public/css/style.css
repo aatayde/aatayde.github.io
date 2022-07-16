@@ -51,7 +51,7 @@ body {
 }
 
 .navbar { 
-  padding: 2rem 0rem;
+  /* padding: 2rem 0rem; */
   background-color: #232323;
 }
 
@@ -60,6 +60,9 @@ body {
 
 }
 
+.row {
+  padding: 2rem 0;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -87,8 +90,8 @@ body {
     transition: all 0.2s; } 
 
   
-  .col {
+  /* .col {
     background-color: #333;
-  }
+  } */
 
   }
