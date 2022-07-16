@@ -40,7 +40,8 @@ body {
   text-shadow: #e5a37d 0 0 10px;
   transition: all 0.2s; 
   color: #121212;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
+  text-align: start;
 }
   
 .info__img {
