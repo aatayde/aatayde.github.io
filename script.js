@@ -3,7 +3,7 @@ const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 // const theButton = document.getElementById("btn-1")
 
 // store btn 
-const myButtons = document.querySelectorAll("a.btn");
+const myButtons = document.querySelectorAll(".btn");
 
 function changeToDark(){
     myButtons.classList.remove('btn-light')
@@ -20,5 +20,8 @@ function changeThemes(e){
 }
 
 isDarkMode.addEventListener("change", e => {
-    changeThemes(e)
+    myButtons.forEach(button => {
+        changeThemes(e)
+      })
 })
+
