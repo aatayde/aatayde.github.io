@@ -3,39 +3,38 @@ const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 // const theButton = document.getElementById("btn-1")
 
 // store btn 
-const myButtons = document.querySelectorAll(".btn");
+const myButtons = document.querySelectorAll('.btn');
 
-function changeToDark(){
-    // myButtons.classList.remove('btn-light')
-    // myButtons.classList.add('btn-dark')
-
-    console.log("Dark Mode triggered")
+function changeThemes(e){
+    return (e.matches ?  changeToDark() : changeToLight())
     
+}
+function changeToDark(){
+
+    console.log("Dark mode selected")
+
     myButtons.forEach(button => {
+
         button.classList.remove('btn-light')
         button.classList.add('btn-dark')
       })
 }
 
 function changeToLight(){
-    // myButtons.classList.remove('btn-dark')
-    // myButtons.classList.add('btn-light')
 
-    console.log("light Mode triggered")
+    console.log("Light mode selected")
     
-
     myButtons.forEach(button => {
-        button.classList.remove('btn-light')
-        button.classList.add('btn-dark')
+
+        button.classList.remove('btn-dark'),
+        button.classList.add('btn-light')
       })
 }
 
-function changeThemes(e){
-    return (e.matches ? changeToDark() : changeToLight())
-    
-}
+
 
 isDarkMode.addEventListener("change", e => {
     changeThemes(e);
+    console.log("Changing Themes")
 })
 
