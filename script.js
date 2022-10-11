@@ -5,10 +5,23 @@ const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 // store btn 
 const myButtons = document.querySelectorAll('.btn');
 
+// onload = (e) => { 
+
+//     console.log("Dark Mode is: ", isDarkMode.matches)
+//     changeThemes(e)
+//     };
+
+// window.onload = (e, theme) => {
+
+//     console.log('page is fully loaded');
+//     changeThemes()
+//   };
+
 function changeThemes(e){
+
     return (e.matches ?  changeToDark() : changeToLight())
-    
 }
+
 function changeToDark(){
 
     console.log("Dark mode selected")
@@ -33,8 +46,9 @@ function changeToLight(){
 
 
 
-isDarkMode.addEventListener("change", e => {
-    changeThemes(e);
-    console.log("Changing Themes")
-})
+// isDarkMode.addEventListener("change", e => {
+
+//     changeThemes(e);
+//     console.log("Changing Themes")
+// })
 
