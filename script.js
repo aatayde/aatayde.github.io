@@ -1,25 +1,14 @@
-console.log("hello, world!")
 const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
-// const theButton = document.getElementById("btn-1")
 
 // store btn 
 const myButtons = document.querySelectorAll('.btn');
 
-// onload = (e) => { 
 
-//     console.log("Dark Mode is: ", isDarkMode.matches)
-//     changeThemes(e)
-//     };
-
-// window.onload = (e, theme) => {
-
-//     console.log('page is fully loaded');
-//     changeThemes()
-//   };
 
 function changeThemes(e){
-
+    console.log("Dark Mode is: ", isDarkMode.matches)
     return (e.matches ?  changeToDark() : changeToLight())
+    
 }
 
 function changeToDark(){
@@ -28,7 +17,7 @@ function changeToDark(){
 
     myButtons.forEach(button => {
 
-        button.classList.remove('btn-light')
+        button.classList.remove('btn-light'),
         button.classList.add('btn-dark')
       })
 }
@@ -44,11 +33,18 @@ function changeToLight(){
       })
 }
 
+isDarkMode.addEventListener("change", e => {
 
+    changeThemes(e);
+    console.log("Changing Themes")
+})
 
-// isDarkMode.addEventListener("change", e => {
+// window.addEventListener('load', (event) => {
+//     console.log('page is fully loaded by load event');
+//     changeThemes(isDarkMode.matches)
+//   });
 
-//     changeThemes(e);
-//     console.log("Changing Themes")
-// })
-
+  onload = () => {
+    console.log("page is loaded by onload event")
+    changeThemes(isDarkMode.matches)
+}
