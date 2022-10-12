@@ -11,13 +11,12 @@ body {
 
 body {
   color: #444;
-  background-image: url("../img/MIO-ITO.webp");
+  
   background-size: cover;
   background-repeat: no-repeat; }
 
 .info__content {
-  color: #121212;
-  text-shadow: #e5a37d 0 0 10px;
+  
   transition: all 0.2s; }
 
 .container {
@@ -39,4 +38,17 @@ body {
   .info__content {
     color: #f0eeee;
     text-shadow: #45566b 0 0 10px;
+    transition: all 0.2s; } }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: url("../img/MIO-ITO.webp") !important;
+    transition: all 0.2s; }
+  .container {
+    background-color: #121212;
+    color: #ccc;
+    transition: all 0.2s; }
+  .info__content {
+    color: #121212;
+    text-shadow: #e5a37d 0 0 10px;
     transition: all 0.2s; } }
