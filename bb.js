@@ -19,11 +19,13 @@ let accounts = {
 
 // Sum of all values in object
 function sumOfValues(obj){
+
     let sum = 0;
         for (value in obj){
+
            sum += parseFloat(obj[value])
-           
         }
+        
         return sum.toFixed(2);
     }
     
@@ -33,3 +35,9 @@ function sumOfValues(obj){
 
     // Next Step:
     // Calculate interest rate 
+
+    // Next Step:
+    // Import data from user input
+
+    // Next Step:
+    // Export data 
