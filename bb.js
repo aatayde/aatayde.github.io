@@ -1,7 +1,7 @@
 document.getElementById('accountTotal')
 
 // List object key & value pairs
-let accounts = {
+const accounts = {
 
     "petal": 764.11,
     "BoA Rewards": 5811.24,
@@ -25,7 +25,7 @@ function sumOfValues(obj){
 
            sum += parseFloat(obj[value])
         }
-        
+
         return sum.toFixed(2);
     }
     
@@ -35,6 +35,12 @@ function sumOfValues(obj){
 
     // Next Step:
     // Calculate interest rate 
+    // Relitive change 
+    // function relitiveChange(initialValue, finalValue){
+        
+    //     let answer = (((finalValue - initialValue) / initialValue) * 100)
+    //     console.log(answer, "%")
+    // }
 
     // Next Step:
     // Import data from user input
