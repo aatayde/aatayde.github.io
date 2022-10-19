@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+/* Variables */
+:root {
+  --bg-dark: #121212;
+
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
@@ -32,7 +38,7 @@ body {
     background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important;
     transition: all 0.2s; }
   .container {
-    background-color: #121212;
+    background-color: var(--bg-dark);
     color: #ccc;
     transition: all 0.2s; }
   .info__content {
@@ -45,10 +51,10 @@ body {
     background-image: url("../img/MIO-ITO.webp") !important;
     transition: all 0.2s; }
   .container {
-    background-color: #121212;
+    background-color: var(--bg-dark);
     color: #ccc;
     transition: all 0.2s; }
   .info__content {
-    color: #121212;
+    color: var(--bg-dark);
     text-shadow: #e5a37d 0 0 10px;
     transition: all 0.2s; } }
