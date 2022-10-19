@@ -3,6 +3,11 @@
 /* Variables */
 :root {
   --bg-dark: #121212;
+  --bg-light: #e3e3e3;
+  --shadow-dark: #45566b;
+  --shadow-light: #e5a37d;
+  --transition: all 0.2s;
+  --shadow-spacing: 0 0 10px;
 
 }
 body {
@@ -16,17 +21,22 @@ body {
   padding: 0; }
 
 body {
-  color: #444;
   
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
 
-.info__content {
-  
-  transition: all 0.2s; }
+/* Transition */
+body,
+.info__content,
+.btn, 
+.container {
+  transition: var(--transition);
+}
 
 .container {
-  padding: 10% 0; }
+  padding: 10% 0; 
+  }
 
 .info__img {
   height: 15rem;
@@ -36,25 +46,25 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important;
-    transition: all 0.2s; }
+     }
   .container {
     background-color: var(--bg-dark);
-    color: #ccc;
-    transition: all 0.2s; }
+    color: var(--bg-light);
+    }
   .info__content {
-    color: #f0eeee;
-    text-shadow: #45566b 0 0 10px;
-    transition: all 0.2s; } }
+    color: var(--bg-light);
+    text-shadow: var(--shadow-dark) var(--shadow-spacing);
+    } }
 
 @media (prefers-color-scheme: light) {
   body {
     background-image: url("../img/MIO-ITO.webp") !important;
-    transition: all 0.2s; }
+    }
   .container {
     background-color: var(--bg-dark);
-    color: #ccc;
-    transition: all 0.2s; }
+    color: var(--bg-dark);
+    }
   .info__content {
     color: var(--bg-dark);
-    text-shadow: #e5a37d 0 0 10px;
-    transition: all 0.2s; } }
+    text-shadow: var(--shadow-light) var(--shadow-spacing);
+    } }
