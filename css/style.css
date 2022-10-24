@@ -10,22 +10,22 @@
   --shadow-spacing: 0 0 10px;
 
 }
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400; }
 
 *,
 *::before,
 *::after {
   margin: 0;
-  padding: 0; }
-
-body {
-  
-  background-size: cover;
-  background-repeat: no-repeat; 
-  height: 100vh;
+  padding: 0; 
+  box-sizing: border-box;
 }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+  }
 
 /* Transition */
 body,
@@ -47,6 +47,7 @@ body,
 @media (prefers-color-scheme: dark) {
   body {
     background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important;
+    background-color: var(--bg-dark);
      }
   .container {
     background-color: var(--bg-dark);
@@ -60,9 +61,10 @@ body,
 @media (prefers-color-scheme: light) {
   body {
     background-image: url("../img/MIO-ITO.webp") !important;
+    background-color: var(--bg-light);
     }
   .container {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     color: var(--bg-dark);
     }
   .info__content {
