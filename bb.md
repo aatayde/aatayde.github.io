@@ -40,4 +40,4 @@
 - Easy to manage with one interest rate
 
 ### cons
-- interest rate could be 
+- interest rate could be high

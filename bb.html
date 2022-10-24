@@ -29,15 +29,22 @@
 </head>
 <body>
 
-    <form>
+    <form class="form-inline px-3">
+      <div class="form-group">
         <label for="incomeAmount">Income</label>
-        <input for="incomeAmount" type="number">
+        <input class="form-control" for="incomeAmount" type="number">
+        <small class="form-text text-muted">Enter amount deposited into your bank account</small>
+      </div>
+      
+      <div class="form-group">
         <label for="frequency">Frequceny</label>
-        <select name="frequency" id="frequency">
-            <option value="weekly">Weekly</option>
-            <option value="bi-weekly">Bi-Weekly</option>
-            <option value="monthly">Monthly</option>
+        <select class="form-select" name="frequency" id="frequency">
+          <option value="weekly">Weekly</option>
+          <option value="bi-weekly">Bi-Weekly</option>
+          <option value="monthly">Monthly</option>
         </select>
+        <small class="form-text text-muted">How often do you get a deposit</small>
+      </div>
     </form>
     
     <script src="./bb.js"></script>
