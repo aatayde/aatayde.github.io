@@ -12,6 +12,7 @@
   --shadow-spacing: 0 0 10px;
 
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
@@ -46,6 +47,16 @@ body,
   border-radius: 50%; 
   border: 0.5rem solid;
 }
+
+
+/* Skill Section */
+.skills {
+  background-color: orangered;
+}
+/* .skill__title {}
+.skill__description {} */
+
+
 
 @media (prefers-color-scheme: dark) {
   body {
