@@ -48,15 +48,17 @@ body,
   border: 0.5rem solid;
 }
 
-
-/* Skill Section */
 .skills {
-  background-color: orangered;
+  border-radius: .3rem;
 }
-/* .skill__title {}
-.skill__description {} */
 
+.skill__container {
+  align-self: center;
+}
 
+.skill__title {
+  font-size: 1.3em;
+}
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -74,6 +76,9 @@ body,
     color: var(--bg-light);
     text-shadow: var(--shadow-dark) var(--shadow-spacing);
     } 
+  .skills:nth-child(even) {
+    background-color: var(--bg-soft-dark);
+  }
   }
 
 @media (prefers-color-scheme: light) {
@@ -92,4 +97,7 @@ body,
     color: var(--bg-dark);
     text-shadow: var(--shadow-light) var(--shadow-spacing);
     } 
+  .skills:nth-child(even) {
+    background-color: var(--white);
+  }
   }
