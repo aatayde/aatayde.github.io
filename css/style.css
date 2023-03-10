@@ -60,6 +60,10 @@ body,
   font-size: 1.3em;
 }
 
+.project {
+  background-color: orangered;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     /* background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important; */
