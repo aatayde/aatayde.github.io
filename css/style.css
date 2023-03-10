@@ -48,20 +48,12 @@ body,
   border: 0.5rem solid;
 }
 
-.skills {
-  border-radius: .3rem;
-}
-
 .skill__container {
   align-self: center;
 }
 
 .skill__title {
   font-size: 1.3em;
-}
-
-.project {
-  background-color: orangered;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,6 +75,9 @@ body,
   .skills:nth-child(even) {
     background-color: var(--bg-soft-dark);
   }
+  .project {
+    background-color: var(--bg-soft-dark);
+  }
   }
 
 @media (prefers-color-scheme: light) {
@@ -102,6 +97,9 @@ body,
     text-shadow: var(--shadow-light) var(--shadow-spacing);
     } 
   .skills:nth-child(even) {
+    background-color: var(--white);
+  }
+  .project {
     background-color: var(--white);
   }
   }
