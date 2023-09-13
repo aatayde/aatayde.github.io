@@ -60,6 +60,73 @@ body,
   font-size: 1.3em;
 }
 
+
+/* .container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 100vh;
+  font-size: 8em;
+  width: 100%;
+} */
+
+
+.line {
+  background-color: white;
+  height: 5px;
+  animation: appear-vertically 1.4s ease-in-out;
+}
+
+.top-text, .bottom-text {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.top-text {
+  animation: slide-up 1.6s ease-out;
+  animation-delay: 1.2s;
+}
+
+.bottom-text {
+  animation: slide-down 1.6s ease-out;
+  animation-delay: 1.2s;
+}
+
+/* Animation */
+/* appear vertically */
+@keyframes appear-vertically {
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+/* appear horizontally*/
+@keyframes slide-up {
+  0%, 100% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0%, 100% {
+      transform: translateY(-30px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     /* background-image: url("../img/annie-spratt-vs6a4EHj_Ro-unsplash.jpg") !important; */
@@ -101,3 +168,4 @@ body,
     background-color: var(--white);
   }
   }
+
