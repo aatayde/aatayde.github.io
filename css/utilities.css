@@ -29,14 +29,14 @@
 
 .section-wrapper-1 {
   /* Testing */
-  border: 1px dotted teal;
+  /* border: 1px dotted teal; */
 
   display: flex;
 }
 
 .header-wrapper {
   /* Testing */
-  border: 1px dotted orangered;
+  /* border: 1px dotted orangered; */
 
   width: -webkit-fill-available;
   align-self: center;
