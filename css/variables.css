@@ -1,0 +1,12 @@
+/* Variables */
+:root {
+  --bg-dark: #121212;
+  --bg-soft-dark: #1c1f23;
+  --soft-dark: #333;
+  --white: #fff;
+  --bg-light: #e3e3e3;
+  --shadow-dark: #45566b;
+  --shadow-light: #e5a37d;
+  --transition: all 0.2s;
+  --shadow-spacing: 0 0 10px;
+}

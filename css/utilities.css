@@ -1,0 +1,51 @@
+.container {
+  padding: 10% 0;
+}
+
+.info__img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 0.5rem solid;
+}
+
+.skills {
+  border-radius: 0.3rem;
+}
+
+.skill__container {
+  align-self: center;
+}
+
+.skill__title {
+  font-size: 1.3em;
+}
+
+.img__style {
+  width: 100%;
+  border-radius: 50%;
+  border: 6.9px solid;
+}
+
+.section-wrapper-1 {
+  /* Testing */
+  border: 1px dotted teal;
+
+  display: flex;
+}
+
+.header-wrapper {
+  /* Testing */
+  border: 1px dotted orangered;
+
+  width: -webkit-fill-available;
+  align-self: center;
+  display: grid;
+  justify-items: center;
+}
+
+.img-wrapper {
+  width: fit-content;
+  display: flex;
+  justify-items: center;
+}
